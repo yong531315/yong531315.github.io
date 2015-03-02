@@ -67,7 +67,7 @@ Quick">
         <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/03/02/hello-world/" class="article-date">
-  <time datetime="2015-03-02T13:30:18.259Z" itemprop="datePublished">Mar 2 2015</time>
+  <time datetime="2015-03-02T13:34:41.014Z" itemprop="datePublished">Mar 2 2015</time>
 </a>
     
   </div>
@@ -89,18 +89,23 @@ Quick">
         <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick_Start">Quick Start</h2>
 <h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<pre><code> <span class="variable">actionBar =</span> getActionBar();
+    actionBar.setDisplayHomeAsUpEnabled(<span class="constant">true</span>);
+    actionBar.setDisplayShowHomeEnabled(<span class="constant">true</span>);
+    actionBar.setHomeButtonEnabled(<span class="constant">true</span>);
+    actionBar.setDisplayShowTitleEnabled(<span class="constant">false</span>);
+    actionBar.setDisplayShowCustomEnabled(<span class="constant">true</span>);
+    View <span class="variable">view =</span> View.inflate(this, R.layout.actionbar_title, <span class="constant">null</span>);
+    <span class="variable">mActionBarTitle =</span> (ShimmerTextView) view.findViewById(R.id.tv_shimmer);
+    new Shimmer().start(mActionBarTitle);
+    actionBar.setCustomView(view);
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run_server">Run server</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 
-<pre><code><span class="tag">&lt;<span class="title">html</span>&gt;</span>
-<span class="tag">&lt;<span class="title">body</span>&gt;</span>
-
-<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
-</code></pre><p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
 <h3 id="Generate_static_files">Generate static files</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
 
